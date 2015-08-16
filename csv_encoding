@@ -1,0 +1,9 @@
+import csv
+import codecs
+import unicodecsv
+
+with open('Sshort.csv', 'rb') as csvfile:
+    spamreader = unicodecsv.reader(csvfile, encoding='utf-8')
+    for row in spamreader:
+		print row
+csvfile.close()
